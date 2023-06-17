@@ -11,7 +11,7 @@ const compromisso = require('./compromissos')
 router.get('/contato', mdLogin, contato.listar)   
 router.get('/contato/:idcontato',contato.listarPorId)
 router.get('/contato/user/:iduser',contato.listarPorUser)
-router.post('/contato', mdAdm, contato.inserir)
+router.post('/contato', mdLogin, contato.inserir)
 router.put('/contato/:idcontato',contato.alterar)
 router.delete('/contato/:idcontato',contato.excluir)
 
